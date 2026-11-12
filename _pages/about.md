@@ -50,7 +50,7 @@ I am a first-year PhD candidate at the HKUST NLP Group, supervised by Professor 
 6. **Composing Parameter-Efficient Modules with Arithmetic Operations** (2023), NeurIPS 2023.  
    Jinghan Zhang, Shiqi Chen, Junteng Liu, Junxian He.
 
-The same publication list is available on the [Publications](/publications/) page.
+The same publication list is available on the [Publications]({{ '/publications/' | relative_url }}) page.
 
 ## Contact
 
