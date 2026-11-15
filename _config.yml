@@ -1,5 +1,6 @@
 # Site
 locale: "en-US"
+site_theme: "default"
 title: "Junteng Liu"
 title_separator: "-"
 name: "Junteng Liu"
@@ -28,6 +29,51 @@ publication_category:
   conferences:
     title: "Conference Papers"
 
+# Site settings
+teaser:
+breadcrumbs: false
+words_per_minute: 160
+future: true
+read_more: "disabled"
+talkmap_link: false
+
+comments:
+  provider:
+  disqus:
+    shortname:
+  discourse:
+    server:
+  facebook:
+    appid:
+    num_posts:
+    colorscheme:
+
+staticman:
+  allowedFields: ['name', 'email', 'url', 'message']
+  branch: "gh-pages"
+  commitMessage: "New comment."
+  filename: comment-{@timestamp}
+  format: "yml"
+  moderation: true
+  path: "_data/comments/{options.slug}"
+  requiredFields: ['name', 'email', 'message']
+  transforms:
+    email: "md5"
+  generatedFields:
+    date:
+      type: "date"
+      options:
+        format: "iso8601"
+
+atom_feed:
+  hide: false
+  path:
+
+analytics:
+  provider: false
+  google:
+    tracking_id:
+
 include:
   - .htaccess
   - _pages
@@ -54,25 +100,31 @@ defaults:
       share: true
       comments: true
 
-# Output settings
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 markdown: kramdown
 highlighter: rouge
-permalink: /:categories/:title/
-timezone: Etc/UTC
-read_more: "disabled"
-breadcrumbs: false
-future: true
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
-analytics:
-  provider: false
-comments:
-  provider:
-atom_feed:
-  hide: false
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  header_links: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
 
 sass:
   sass_dir: _sass
   style: compressed
+
+permalink: /:categories/:title/
+timezone: Etc/UTC
 
 category_archive:
   type: liquid
