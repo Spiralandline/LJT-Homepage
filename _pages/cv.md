@@ -22,7 +22,8 @@ Research Experience
 * **Research Intern**, Shanghai AI Lab, June 2023–December 2023
   * Advisor: Prof. Yu Cheng
 * **HKUST NLP Group**, Hong Kong University of Science and Technology, 2024–Present
-  * PhD supervisor: Professor Junxian He
+  * Research group led by Professor Junxian He
+  * PhD supervisor: Professor Junxian He, who also previously advised me during undergraduate studies at SJTU
 
 Research Interests & Skills
 ======
